@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/gSDL.dir/src/main.cpp.o CMakeFiles/gSDL.dir/src/game.cpp.o -o /home/ubu22/project/personal/GameinSDL/bin/gSDL  -L/usr/lib/x86_64-linux-gnu  -lSDL2 

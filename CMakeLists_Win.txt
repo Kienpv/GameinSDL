@@ -1,0 +1,44 @@
+cmake_minimum_required(VERSION 3.10)
+
+set(CMAKE_C_COMPILER "/cygdrive/c/cygwin64/bin/gcc")
+set(CMAKE_CXX_COMPILER "/cygdrive/c/cygwin64/bin/g++")
+
+add_compile_options(-gdwarf-2 -gstrict-dwarf)
+
+project("gSDL")
+
+set(CMAKE_CXX_STANDARD 17)
+
+#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/buildx) 
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin)
+
+# target_include_directories(gSDL
+#     C:/GL/SDL/include
+#     /hdr
+# )
+
+include_directories(
+    /cygdrive/c/GL/SDL/include
+    ${PROJECT_SOURCE_DIR}/hdr
+)
+
+link_directories (
+    /cygdrive/c/GL/SDL/lib/x64
+)
+
+file(GLOB_RECURSE SOURCE_DEPENDENCIES 
+    ${PROJECT_SOURCE_DIR}/src/*.cpp
+)
+file(GLOB_RECURSE HEADER_DEPENDENCIES 
+    ${PROJECT_SOURCE_DIR}/hdr/*.h
+)
+
+# IF(UNIX)
+#     link_libraries(stdc++fs)
+# ENDIF()
+
+add_executable(${PROJECT_NAME} ${SOURCE_DEPENDENCIES} ${HEADER_DEPENDENCIES})
+
+target_link_libraries(${PROJECT_NAME} 
+                        SDL2main SDL2 
+                     )

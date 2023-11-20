@@ -1,0 +1,22 @@
+{
+    // "MIDebuggerPath": "/cygdrive/d/Tools/Dev-Cpp/MinGW64/bin/gdb.exe",
+    "MIDebuggerPath": "/usr/bin/gdb",
+
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "build",
+            // "program": "${workspaceFolder}/bin/gSDL.exe",
+            "program": "${workspaceFolder}/bin/gSDL",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb"
+        }
+    ]
+}

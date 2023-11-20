@@ -1,0 +1,43 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/SDL2"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "/home/ubu22/project/personal/GameinSDL/**",
+                "/usr/include/SDL2"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerPathInCppPropertiesJson": "/usr/bin/gcc",
+            "mergeConfigurations": false,
+            "browse": {
+                "path": [
+                    "/home/ubu22/project/personal/GameinSDL/**",
+                    "/usr/include/SDL2/**",
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}
