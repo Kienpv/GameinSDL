@@ -17,16 +17,17 @@ class Game
 {
 private:
 	bool 			m_IsRunning;
-	std::vector<Ball> mBalls;
-	Vector2			mPaddle1Pos;
-	Vector2 		mPaddle2Pos;
 	SDL_Window* 	mWindow;
 	SDL_Renderer* 	mRenderer;
 
 	unsigned int 	mTicksCount;
-	int 			mPaddle1Dir;
-	int 			mPaddle2Dir;
+	std::vector<Ball> mBalls;
+	Vector2			mPaddle1Pos;
+	Vector2			mPaddle2Pos;
+	int				mPaddle1Dir;
+	int				mPaddle2Dir;
 	int 			mAttempts;
+
 public:
 	Game();
 

@@ -1,3 +1,0 @@
-/home/ubu22/project/personal/GameinSDL/build/CMakeFiles/gSDL.dir
-/home/ubu22/project/personal/GameinSDL/build/CMakeFiles/edit_cache.dir
-/home/ubu22/project/personal/GameinSDL/build/CMakeFiles/rebuild_cache.dir
